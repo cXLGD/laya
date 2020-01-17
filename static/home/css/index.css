@@ -1,0 +1,232 @@
+.navbar{
+    border-radius:0;
+    /* margin-bottom:0; */
+}
+
+.navbar-brand{
+    padding-top:7px;
+}
+
+.banner{
+    margin-top:50px;
+    background:#2b80d9;
+}
+
+
+/* 引擎 */
+.engine{
+    padding:100px 0 40px;
+    background-color: #fbfaf7;
+}
+.engine .engine-title{
+    margin-bottom:40px;
+}
+.engine .engine-title h1{
+    font-weight:bold;
+    font-size: 50px;
+    /* font-family: "黑体"; */
+    color:#2b80d9;
+}
+.engine .engine-items .media-object{
+    border-radius:5px;
+}
+.engine .media .media-left a img{
+    background: #2b80d9;
+}
+.engine .media-body h4{
+    color:#333;
+}
+.engine .media-body p{
+    color:#666;
+}
+
+
+/* layabox优势 */
+.advance .advance-title h1{
+    font-weight:bold;
+    font-size:50px;
+    color:#8fc31f;
+}
+.advance .media-left a img{
+    background: #8fc31f;
+}
+.advance .media .media-body p{
+    font-size:20px;
+    color:#666;
+    margin-bottom:0;
+}
+
+
+/* layabox家族 */
+.family{
+    background: #0079d7;
+}
+.family .media .media-left img{
+    background: #0079d7;
+}
+.media:first-child{
+    margin-top:15px;
+}
+.family .media .media-body{
+    padding-left:19px;
+}
+.family .family-title h1{
+    color: #fffefe;
+}
+.family .media .media-body h3{
+    font-size: 25px;
+    color: #fffefe;
+}
+.family .media .media-body p{
+    font-size:14px;
+    color:#fffefe;
+    font-family:'微软雅黑';
+}
+.family .media .img-4{
+    padding-left:0;
+}
+
+/* 游戏 */
+.game .game-title{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.game .video img{
+    width:345px;
+}
+.game .game-title h1 a{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    padding-top:12px;
+    padding-right:10px;
+    color:#000;
+}
+.game .game-items .div img{
+    width:75px;
+}
+.game .game-items .div{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+
+/* 伙伴 */
+.border{
+    background: #f4f4f4;
+}
+.border .border-title h1{
+    font-size:50px;
+}
+.border .border-title h1 span{
+    font-size:20px;
+}
+.border .border-items{
+    padding:15px 10px;
+}
+
+
+/* 底部 */
+footer{
+    background:#3b3b3b;
+    /* height:100px; */
+}
+footer .constract p{
+    padding-top:30px;
+}
+footer .constract p a{
+    color:#070808;
+    padding-left:30px;
+    font-size:20px;
+    text-decoration: none;
+}
+footer .constract p a:first-child{
+    padding-left:0;
+}
+footer .constract .qqq{
+    font-size: 15px;
+    color:#070808;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+footer .weixin{
+    position: relative;
+}
+footer .wechat img{
+    float: right;
+    margin-top:55px;
+    margin-left:20px;
+}
+.ma{
+    width:90px;
+    position:absolute;
+    top: -95px;
+    right: 33px;
+    display:none;
+}
+footer .wechat .weixin:hover .ma{
+    display: block;
+}
+
+
+
+/* pc端 */
+@media(min-width:992px) and (max-width:1199px){
+    .family .media .media-body p{
+        font-size: 10px;
+    }
+
+    /* 游戏部分 */
+    .game .game-items .div p{
+        padding-left:15px;
+    }
+}
+
+
+/* 平板端 */
+@media(max-width:991px) and (min-width:768px){
+    /* 导航条部分 */
+    .navbar-collapse{
+        position:relative;
+    }
+    .navbar-right{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+
+    /* 家族部分 */
+    .family .media .media-body p{
+        font-size: 10px;
+    }
+
+    /* 游戏部分 */
+    .game .game-items .div img{
+        width:40px;
+    }
+    .game .game-items .div  span{
+        margin-left: -20px;
+        font-size: 10px;
+    }
+    .game .game-title h1 a{
+        padding-right:30px;
+    }
+}
+
+
+/* 手机端 */
+@media(max-width:767px){
+    /* layabox优势部分 */
+    .advance .advance-title h1,.engine .engine-title h1{
+        font-size: 40px;
+    }
+    .advance .media .media-body p{
+        font-size:15px;
+    }
+    .game .game-items{
+        margin-top:15px;
+    }
+    .game .video{display: flex;justify-content: space-around;}
+    .game .game-items .div img{width:100%;}
+    .game .game-items .div span{font-size:10px;}
+    footer .constract p a,footer .constract .qqq{font-size:10px;}
+}

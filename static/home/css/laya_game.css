@@ -1,0 +1,148 @@
+.navbar{
+    border-radius:0;
+    /* margin-bottom:0; */
+}
+
+.navbar-brand{
+    padding-top:7px;
+}
+
+.banner{
+    margin-top:50px;
+}
+
+/* game-1 */
+.game-1,.game-2{margin-top:40px;}
+.game-1 .media-body,.game-2 .media-body{width:66.66666666%}
+.game-1 .media-body h4,.game-2 .media-body h4{
+    font-size:35px;
+}
+.game-1 .media-body p,.game-1 .media-body h4{padding-right: 45px;}
+.game-1 .media-body p,.game-2 .media-body p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #898989;
+}
+.media:first-child{margin-top:15px;}
+
+/* games-items */
+.games .games-title{margin-top:40px;}
+.games .games-title h1{font-size:30px;font-weight:500;padding-left:20px;}
+.games .games-items{position:relative;margin-bottom:30px;}
+.games .games-items .p{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #fff;
+    font-size: 10px;
+    padding-left: 23px;
+    padding-right: 35px;
+    line-height: 20px;
+    text-align:left;
+    
+}
+.games .games-items span{
+    display:block;
+    margin-top:10px;
+    color:#2a2a2a;
+}
+.games .games-items img{border-radius:5px;}
+
+/* 底部 */
+footer{
+    background:#3b3b3b;
+    /* height:100px; */
+}
+footer .constract p{
+    padding-top:30px;
+}
+footer .constract p a{
+    color:#070808;
+    padding-left:30px;
+    font-size:20px;
+    text-decoration: none;
+}
+footer .constract p a:first-child{
+    padding-left:0;
+}
+footer .constract .qqq{
+    font-size: 15px;
+    color:#070808;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+footer .weixin{
+    position: relative;
+}
+footer .wechat img{
+    float: right;
+    margin-top:55px;
+    margin-left:20px;
+}
+.ma{
+    width:90px;
+    position:absolute;
+    top: -95px;
+    right: 33px;
+    display:none;
+}
+footer .wechat .weixin:hover .ma{
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* pc端 */
+@media(min-width:992px) and (max-width:1199px){
+    /* game-1 */
+    .game-1 .media-body h4{font-size:30px;}
+    .game-1 .media-body p{line-height:25px;}
+}
+
+
+
+
+/* 平板端 */
+@media(min-width:768px) and (max-width:991px){
+    /* 导航条部分 */
+    .navbar-collapse{
+        position:relative;
+    }
+    .navbar-right{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+
+    /* banner */
+    .banner{margin-top:100px;}
+
+    /* game-1 */
+    .game-1 .media-body h4{font-size:30px;}
+    .game-1 .media-body p{line-height:25px;}
+    .game-1 .media .media-left,.game-2 .media-right{margin-top:70px;}
+
+    /* games-items */
+    .games .games-items .p{
+        line-height:16px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+
+
+
+
+/* 手机端 */
+@media(max-width:767px){
+    .media-body{width:100% !important;}
+    .text-right{text-align:left;}
+    .games .games-items .p{display:none;}
+    footer .constract p a,footer .constract .qqq{font-size:10px;}
+}
